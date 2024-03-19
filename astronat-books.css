@@ -1,0 +1,102 @@
+/* Defaults */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif
+}
+img{
+    width: 250px;
+}
+h1, h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+a{
+    color: rgb(55, 11, 11);
+}
+.item a, .header a{
+    color: antiquewhite;
+}
+
+/* Sections */
+
+.header{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(55, 11, 11);
+    color: antiquewhite;
+    height: 100%;
+    padding: 1px;
+}
+
+/* Containers */
+
+.columns {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; /* Distribute columns equally */
+}
+.centre{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 10px;
+    column-width: 30%;
+}
+.column2 {
+    flex: 3;
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 10px;
+    column-width: 70%;
+}
+.item{
+    flex: 1;
+    background-color: rgb(55, 11, 11);
+    color: antiquewhite;
+    height: fit-content;
+    padding: 10px;
+    margin: 5px;
+}
+.quotebox{
+    text-align: center;
+    padding: 5px;
+    border: 2px solid rgb(55, 11, 11);
+}
+
+.imagebox{
+    width: 250px;
+    height: 167px;
+    padding: 10px;
+}
+
+.column1 .item{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Experimental CSS stuff */
+
+.expand-dong{
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    width:250px;
+    height: auto;
+}
+.expand-dong:hover{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: auto;
+    height: 100%;
+    z-index: 1000;
+}
